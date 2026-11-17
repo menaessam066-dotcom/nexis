@@ -1,0 +1,6 @@
+This archive contains EXACTLY 150 generated training image files:
+  data/target/: 50 synthetic renderings of ONE fictional plate
+  data/other/: 100 synthetic renderings of OTHER fictional plates
+Plus two separate generated TEST examples under samples/.
+No photos are from real people, vehicles, public datasets, or the internet.
+This model has not been validated for real-world recognition or entry control.

@@ -1,0 +1,18 @@
+PLATEGATE AI v3 — FIXED GATE RECOVERY + MODEL TRAINING
+===================================================
+1. Extract the ZIP, open THIS folder in VS Code.
+2. In VS Code > Terminal > New Terminal run: .\start_windows.bat
+3. Open: http://127.0.0.1:8000
+4. In SIMULATION: Test Load matching plate -> Analyze -> opens for 3 s -> CLOSED.
+5. Test Load different plate -> Analyze -> NOT A MATCH; never opens.
+6. Connect REAL Arduino ONLY AFTER UPLOADING THE NEW v3 .ino sketch!
+   Arduino sketch: arduino\plate_gate_servo\plate_gate_servo.ino
+7. New dashboard: if CLOSED acknowledgement is missing, shows error and Retry CLOSE.
+8. Real photos: replace BOTH data\target and data\other; run
+   .\.venv\Scripts\python.exe train.py --real-data
+9. Independent new photos: data\heldout_target and data\heldout_other; run
+   .\.venv\Scripts\python.exe evaluate.py
+
+Read README_STEP_BY_STEP.md for wiring, training, and troubleshooting.
+150 INCLUDED IMAGES ARE SYNTHETIC. Not trained/tested on real camera photos.
+The hardware CLOSE message indicates a command, NOT a verified physical position.
